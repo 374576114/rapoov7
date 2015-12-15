@@ -1,0 +1,6 @@
+# make the priority of our hotfix module higher than system modules
+#sudo rmmod hid_generic
+sudo rmmod usbhid 
+sudo rmmod hid 
+sudo insmod /home/craboyang/rapoov7-keyboard-driver-master/rapoov7_hotfix.ko
+sudo modprobe usbhid

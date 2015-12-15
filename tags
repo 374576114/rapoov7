@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DRIVER_AUTHOR	main.c	/^MODULE_AUTHOR(DRIVER_AUTHOR);$/;"	v
+DRIVER_AUTHOR	main.c	8;"	d	file:
+DRIVER_DESC	main.c	/^MODULE_DESCRIPTION(DRIVER_DESC);$/;"	v
+DRIVER_DESC	main.c	9;"	d	file:
+DRIVER_LICENSE	main.c	/^MODULE_LICENSE(DRIVER_LICENSE);$/;"	v
+DRIVER_LICENSE	main.c	10;"	d	file:
+DRIVER_VERSION	main.c	7;"	d	file:
+KVERSION	Makefile	/^KVERSION = $(shell uname -r)$/;"	m
+RAPOO_V7_PRODUCT_ID	main.c	19;"	d	file:
+RAPOO_V7_VENDOR_ID	main.c	18;"	d	file:
+__HIDBP_KEYBOARD_MODULE_HEADER__	hidbp_mod.h	18;"	d
+__fix__set_protocol	probe.c	/^static void __fix__set_protocol(struct usb_device *dev, struct usb_host_interface *interface)$/;"	f	file:
+__initialize_hidbp_keyboard_info	probe.c	/^static int __initialize_hidbp_keyboard_info($/;"	f	file:
+__initialize_input_device	probe.c	/^static void __initialize_input_device($/;"	f	file:
+__initialize_urb	probe.c	/^static void __initialize_urb($/;"	f	file:
+__input_device_set_key	probe.c	/^static void __input_device_set_key(struct input_dev *input_dev)$/;"	f	file:
+cr	hidbp_mod.h	/^    struct usb_ctrlrequest *cr;   \/* control request "template" for led URB *\/$/;"	m	struct:hidbp_keyboard	typeref:struct:hidbp_keyboard::usb_ctrlrequest
+create_hidbp_keyboard	mod_base.c	/^int create_hidbp_keyboard(struct usb_device *dev, struct hidbp_keyboard *kbd)$/;"	f
+destroy_hidbp_keyboard	mod_base.c	/^void destroy_hidbp_keyboard(struct usb_device *dev, struct hidbp_keyboard *kbd)$/;"	f
+hidbp_keyboard	hidbp_mod.h	/^struct hidbp_keyboard$/;"	s
+hidbp_keyboard_close	mod_base.c	/^void hidbp_keyboard_close(struct input_dev *dev)$/;"	f
+hidbp_keyboard_disconnect	mod_base.c	/^void hidbp_keyboard_disconnect(struct usb_interface *intf)$/;"	f
+hidbp_keyboard_driver	main.c	/^static struct usb_driver hidbp_keyboard_driver = {$/;"	v	typeref:struct:usb_driver	file:
+hidbp_keyboard_event	leds.c	/^int hidbp_keyboard_event(struct input_dev *dev, unsigned int type,$/;"	f
+hidbp_keyboard_exit	main.c	/^module_exit(hidbp_keyboard_exit);$/;"	v
+hidbp_keyboard_exit	main.c	/^static void __exit hidbp_keyboard_exit(void) {$/;"	f	file:
+hidbp_keyboard_id_table	main.c	/^static struct usb_device_id hidbp_keyboard_id_table [] =$/;"	v	typeref:struct:usb_device_id	file:
+hidbp_keyboard_init	main.c	/^module_init(hidbp_keyboard_init);$/;"	v
+hidbp_keyboard_init	main.c	/^static int __init hidbp_keyboard_init(void) {$/;"	f	file:
+hidbp_keyboard_irq	keystroke.c	/^void hidbp_keyboard_irq(struct urb *urb)$/;"	f
+hidbp_keyboard_keycode	keystroke.c	/^const __u8 hidbp_keyboard_keycode[256] = $/;"	v
+hidbp_keyboard_led	leds.c	/^void hidbp_keyboard_led(struct urb *urb)$/;"	f
+hidbp_keyboard_open	mod_base.c	/^int hidbp_keyboard_open(struct input_dev *dev)$/;"	f
+hidbp_keyboard_probe	probe.c	/^int hidbp_keyboard_probe($/;"	f
+inputdev	hidbp_mod.h	/^    struct input_dev  *inputdev; \/* input subsystem associated with this$/;"	m	struct:hidbp_keyboard	typeref:struct:hidbp_keyboard::input_dev
+irq	hidbp_mod.h	/^    struct urb *irq;   \/* URB for keystroke msgs *\/$/;"	m	struct:hidbp_keyboard	typeref:struct:hidbp_keyboard::urb
+led	hidbp_mod.h	/^    struct urb *led;   \/* LED for emitting LEDs control msgs *\/$/;"	m	struct:hidbp_keyboard	typeref:struct:hidbp_keyboard::urb
+leds	hidbp_mod.h	/^    __u8 *leds;    \/* led status buffer for the led URB *\/$/;"	m	struct:hidbp_keyboard
+leds_dma	hidbp_mod.h	/^    dma_addr_t new_dma, leds_dma;  \/* DMA address for URBs *\/$/;"	m	struct:hidbp_keyboard
+name	hidbp_mod.h	/^    char name[128], phys[64];$/;"	m	struct:hidbp_keyboard
+new_dma	hidbp_mod.h	/^    dma_addr_t new_dma, leds_dma;  \/* DMA address for URBs *\/$/;"	m	struct:hidbp_keyboard
+newleds	hidbp_mod.h	/^    __u8 newleds;  \/* updated LEDs status *\/$/;"	m	struct:hidbp_keyboard
+obj-m	Makefile	/^obj-m := rapoov7_hotfix.o$/;"	m
+old	hidbp_mod.h	/^    __u8 old[8];   \/* keystroke data recieved in the last session *\/$/;"	m	struct:hidbp_keyboard
+phys	hidbp_mod.h	/^    char name[128], phys[64];$/;"	m	struct:hidbp_keyboard
+prev	hidbp_mod.h	/^    __u8 prev[8];  \/* key status of the previous moment, we can see key$/;"	m	struct:hidbp_keyboard
+rapoov7_hotfix-objs	Makefile	/^rapoov7_hotfix-objs := main.o mod_base.o probe.o keystroke.o leds.o$/;"	m
+usbdev	hidbp_mod.h	/^    struct usb_device *usbdev;   \/* the "actual" usb device pointer *\/$/;"	m	struct:hidbp_keyboard	typeref:struct:hidbp_keyboard::usb_device
